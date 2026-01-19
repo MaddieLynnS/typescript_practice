@@ -30,7 +30,7 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |     1/13 |    3:15pm|  IM    | Learned about TypeScript, environment setup| 1:00        |
 |     1/14 |    6:15pm|  IM    | Practice writing with types, functions, etc|  :30        |
 |     1/15 |   12:15pm|  IM    | Arrays, tuples, type alias, objects, etc   |  :45        |
-|          |          |        |                                            |             |
+|     1/19 |   12:20pm|  IM    | Practice exercises for all the five basics | 1:00        |
 |          |          |        |                                            |             |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|

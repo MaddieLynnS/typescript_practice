@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 var level;
 level = 1;
 level = 'a';
@@ -61,4 +62,12 @@ var customer = getCustomerFromDB(2);
 //if (customer !== null)
 console.log(customer === null || customer === void 0 ? void 0 : customer.birthday);
 var customer2 = getCustomerFromDB(0);
-console.log(customer2 === null || customer2 === void 0 ? void 0 : customer2.birthday);
+console.log((_a = customer2 === null || customer2 === void 0 ? void 0 : customer2.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+var UserAccount = /** @class */ (function () {
+    function UserAccount(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+    return UserAccount;
+}());
+var jimmy = new UserAccount("Jimmy", 2);
