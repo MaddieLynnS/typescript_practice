@@ -36,7 +36,7 @@ console.log(printStudentRecord(bob));
 
 //Classesssss
 //Create Student class that has those three pieces of info in a constructor AND a function call getSummary that summarizes. Wow.
-class Student {
+class Student1 {
     name: string;
     age: number;
     isEnrolled: boolean;
@@ -52,5 +52,5 @@ class Student {
     }
 }
 
-let bobby: Student = new Student("Bob Thompson", 45, true);
+let bobby: Student1 = new Student1("Bob Thompson", 45, true);
 console.log(bobby.getSummary());

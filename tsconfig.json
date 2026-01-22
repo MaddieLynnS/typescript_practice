@@ -8,7 +8,7 @@
     "skipLibCheck": true,
     "noEmitOnError": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noImplicitReturns": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./build"

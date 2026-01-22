@@ -31,12 +31,14 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |     1/14 |    6:15pm|  IM    | Practice writing with types, functions, etc|  :30        |
 |     1/15 |   12:15pm|  IM    | Arrays, tuples, type alias, objects, etc   |  :45        |
 |     1/19 |   12:20pm|  IM    | Practice exercises for all the five basics | 1:00        |
+|     1/21 |    5:05pm|  IM    | Installed express, started building project| 1:30        |
 |          |          |        |                                            |             |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
 |----------|----------|:------:|--------------------------------------------|:-----------:|
 |     1/12 |    1:15pm|  MTG   | Planning and dividing roles for this sprint| :30         |
 |     1/16 |    1:00pm|  MTG   | Standup refining our goals and next steps  | :15         |
+|     1/21 |    1:00pm|  MTG   | Plans for sprint 2, identifying struggles  | :15         |
 |          |          |        |                                            |             |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
@@ -46,6 +48,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |     1/14 |12:45pm   |  TP    | Decide on ideas with team, start on roles  | 1:00        |
 |     1/15 |   6pm    |  TP    | Got database connected to project, tables  | :50         |
 |     1/16 |   1:10pm |  TP    | Found use case of supabase, made tables    | :35         |
+|     1/20 |   1:35pm |  TP    | Client established, SELECT & INSERT working| 1:15        |
+|     1/21 |   1:15pm |  TP    | Made presentation, planning for sprint end | :30         |
 |          |          |        |                                            |             |
 
 _Note: Add more rows as needed._

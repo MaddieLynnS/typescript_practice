@@ -117,7 +117,7 @@ class UserAccount {
 const jimmy: User = new UserAccount("Jimmy", 2);
 
 //interfaces are cool because they let you add/extend them after, whereas types are more fixed
-interface Student extends User {
+interface Students extends User {
     student_id: number;
 }
 
