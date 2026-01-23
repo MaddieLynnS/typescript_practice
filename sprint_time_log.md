@@ -32,7 +32,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |     1/15 |   12:15pm|  IM    | Arrays, tuples, type alias, objects, etc   |  :45        |
 |     1/19 |   12:20pm|  IM    | Practice exercises for all the five basics | 1:00        |
 |     1/21 |    5:05pm|  IM    | Installed express, started building project| 1:30        |
-|          |          |        |                                            |             |
+|     1/22 |    1:05pm|  IM    | Finished writing functions, almost done    |  :45        |
+|     1/23 |    11am  |  IM    | Implemented error handling, project done   |  :40        |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
 |----------|----------|:------:|--------------------------------------------|:-----------:|

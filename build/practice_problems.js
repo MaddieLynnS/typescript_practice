@@ -28,16 +28,16 @@ var bob = ["Bob Thompson", 45, true];
 console.log(printStudentRecord(bob));
 //Classesssss
 //Create Student class that has those three pieces of info in a constructor AND a function call getSummary that summarizes. Wow.
-var Student = /** @class */ (function () {
-    function Student(name, age, isEnrolled) {
+var Student1 = /** @class */ (function () {
+    function Student1(name, age, isEnrolled) {
         this.name = name;
         this.age = age;
         this.isEnrolled = isEnrolled;
     }
-    Student.prototype.getSummary = function () {
+    Student1.prototype.getSummary = function () {
         return "".concat(this.name, " is ").concat(this.age, " years old and is ").concat(this.isEnrolled ? '' : 'not ', "currently enrolled.");
     };
-    return Student;
+    return Student1;
 }());
-var bobby = new Student("Bob Thompson", 45, true);
+var bobby = new Student1("Bob Thompson", 45, true);
 console.log(bobby.getSummary());

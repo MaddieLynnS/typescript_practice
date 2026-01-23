@@ -21,15 +21,41 @@ let students: Student[] = [one];
 //Create student from input data
 export function createStudent(name: string, age: number, enrolled: boolean) : Student {
     let student: Student = new Student(name, age, enrolled);
-    students.push(student);
-    return student;
+    if (student){
+        students.push(student);
+        return student;
+    }
+    else throw new Error("Student not created, there was an error");
 }
 
-
-export function readStudent(name: string) : Student | string {
+//Find a student in the array based on provided name
+export function readStudent(name: string) : Student {
     let answer = students.find((s) => s.name === name);
     if (answer) return answer;
-    return "The student was not found";
+    throw new Error("Student not found");
 }
 
-//export fakeFunction();
+
+//Update a student's enrollment status based on provided information
+export function updateStudent(name: string, enrollUpdate: boolean) : Student {
+    let currentStudent = students.find(s => s.name === name);
+    if (currentStudent) {
+        currentStudent.isEnrolled = enrollUpdate;
+        return currentStudent;
+    }
+    else throw new Error("Could not find student from given input")
+}
+
+
+//Delete an entire student record because we can
+export function deleteStudent(name: string) : Student {
+    let studentIndex: number = students.findIndex((s:Student) => s.name === name);
+    if (studentIndex === -1) {
+        throw new Error("Student not found, invalid index returned.");
+    }
+    else {
+        let deletedStudent: Student[] = students.splice(studentIndex, 1);
+        if (deletedStudent) return deletedStudent[0];
+    }
+    throw new Error("Student not deleted, there was an error");
+}
