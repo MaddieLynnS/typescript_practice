@@ -28,14 +28,14 @@ app.post("/students", (req:Request, res: Response) => {
 //READ (Select a record based off a provided name)
 app.get("/students/:name", (req: Request, res: Response) => {
   try {
-    const name: string | string[] = req.params.name;
+    let name: string | string[] = req.params.name;
     
     //Error handling for if string[] is returned, which shouldn't happen
     if (Array.isArray(name)) {
-      throw new Error( "Invalid syntax input");
+      name = name[0];
     }
       
-    const result: Student | null = readStudent(name);
+    const result: Student = readStudent(name);
     
     if(result) res.json(result);
     else throw Error("Student not found");
@@ -46,14 +46,16 @@ app.get("/students/:name", (req: Request, res: Response) => {
 
 
   //UPDATE (Update a specific record based off provided information)
-  app.put("/students", (req: Request, res:Response) => {
+  app.put("/students/:name", (req: Request, res:Response) => {
     try {
-      const {name, enroll} = req.body;
+      const {name, isEnrolled} = req.body;
+
+      const updatedStudent: Student = updateStudent(name, isEnrolled);
       
-      const updatedStudent = updateStudent(name, enroll);
+      console.log("Server:", updatedStudent)
       
-      if(updatedStudent) res.json(updatedStudent);
-      else throw new Error("Student not updated correctly");
+      if(!updatedStudent) throw new Error("Student not updated correctly");
+      res.json(updatedStudent);
     } catch (err) {
       res.status(400).json({ error: (err as Error).message});
     }

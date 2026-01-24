@@ -39,12 +39,11 @@ function readStudent(name) {
 //Update a student's enrollment status based on provided information
 function updateStudent(name, enrollUpdate) {
     var currentStudent = students.find(function (s) { return s.name === name; });
-    if (currentStudent) {
-        currentStudent.isEnrolled = enrollUpdate;
-        return currentStudent;
-    }
-    else
+    if (!currentStudent) {
         throw new Error("Could not find student from given input");
+    }
+    currentStudent.isEnrolled = enrollUpdate;
+    return currentStudent;
 }
 //Delete an entire student record because we can
 function deleteStudent(name) {

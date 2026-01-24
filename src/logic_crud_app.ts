@@ -38,12 +38,12 @@ export function readStudent(name: string) : Student {
 
 //Update a student's enrollment status based on provided information
 export function updateStudent(name: string, enrollUpdate: boolean) : Student {
-    let currentStudent = students.find(s => s.name === name);
-    if (currentStudent) {
-        currentStudent.isEnrolled = enrollUpdate;
-        return currentStudent;
+    const currentStudent = students.find(s => s.name === name);
+    if (!currentStudent) {
+        throw new Error("Could not find student from given input")
     }
-    else throw new Error("Could not find student from given input")
+    currentStudent.isEnrolled = enrollUpdate;
+    return currentStudent;
 }
 
 

@@ -34,13 +34,14 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |     1/21 |    5:05pm|  IM    | Installed express, started building project| 1:30        |
 |     1/22 |    1:05pm|  IM    | Finished writing functions, almost done    |  :45        |
 |     1/23 |    11am  |  IM    | Implemented error handling, project done   |  :40        |
+|     1/24 |    11am  |  IM    | Made client file to test API, fixed bugs   |  :45        |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
 |----------|----------|:------:|--------------------------------------------|:-----------:|
 |     1/12 |    1:15pm|  MTG   | Planning and dividing roles for this sprint| :30         |
 |     1/16 |    1:00pm|  MTG   | Standup refining our goals and next steps  | :15         |
 |     1/21 |    1:00pm|  MTG   | Plans for sprint 2, identifying struggles  | :15         |
-|          |          |        |                                            |             |
+|     1/23 |    1:00pm|  MTG   | Regroup on sprint 1, reassigned roles      | :30         |
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
 |----------|----------|:------:|--------------------------------------------|:-----------:|
@@ -59,7 +60,7 @@ _Note: Add more rows as needed._
 
 |Categroy                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
-|IM - Individual Module         |                          |
-|TP - Team Project              |                          |
-|MTG - Class Meetings           |                          |
-|**TOTAL**                      |                          |
+|IM - Individual Module         |          7:30            |
+|TP - Team Project              |          5:30            |
+|MTG - Class Meetings           |          1:30            |
+|**TOTAL**                      |          14:30           |

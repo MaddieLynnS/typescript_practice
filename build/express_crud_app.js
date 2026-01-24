@@ -27,7 +27,7 @@ app.get("/students/:name", function (req, res) {
         var name_2 = req.params.name;
         //Error handling for if string[] is returned, which shouldn't happen
         if (Array.isArray(name_2)) {
-            throw new Error("Invalid syntax input");
+            name_2 = name_2[0];
         }
         var result = (0, logic_crud_app_1.readStudent)(name_2);
         if (result)
@@ -40,14 +40,14 @@ app.get("/students/:name", function (req, res) {
     }
 });
 //UPDATE (Update a specific record based off provided information)
-app.put("/students", function (req, res) {
+app.put("/students/:name", function (req, res) {
     try {
-        var _a = req.body, name_3 = _a.name, enroll = _a.enroll;
-        var updatedStudent = (0, logic_crud_app_1.updateStudent)(name_3, enroll);
-        if (updatedStudent)
-            res.json(updatedStudent);
-        else
+        var _a = req.body, name_3 = _a.name, isEnrolled_2 = _a.isEnrolled;
+        var updatedStudent = (0, logic_crud_app_1.updateStudent)(name_3, isEnrolled_2);
+        console.log("Server:", updatedStudent);
+        if (!updatedStudent)
             throw new Error("Student not updated correctly");
+        res.json(updatedStudent);
     }
     catch (err) {
         res.status(400).json({ error: err.message });
