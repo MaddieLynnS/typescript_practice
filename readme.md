@@ -1,4 +1,4 @@
-# Project Title (Update)
+# TypeScript CRUD API (feat. Express.js)
 
 My end project is a simple API that simulates the CRUD features: create, read, update, or delete on student records
 
